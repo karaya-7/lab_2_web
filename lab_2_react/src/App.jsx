@@ -3,22 +3,18 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
-import "./App.css";
 
 function App() {
   return (
-    <div className="app">
+    <div className="min-h-screen bg-slate-100 font-sans">
       <Header />
-      <hr />
-      <main>
+      <main className="max-w-4xl mx-auto px-4">
         <About />
         <Skills />
         <Experience />
       </main>
-      <hr />
       <Footer />
     </div>
   );
 }
-
 export default App;
